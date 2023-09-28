@@ -8,11 +8,13 @@
   "sideEffects": ["*.css"],
   "types": "./types/index.d.ts",
   "scripts": {
-    "build": "tamagui-build",
-    "dev": "tamagui-build --watch"
+    "build": "yarn clean && tamagui-build",
+    "dev": "tamagui-build --watch",
+    "clean": "rm -rf ./dist && rm -rf ./types"
   },
   "dependencies": {
-    "@tamagui/config": "1.72.3"
+    "@tamagui/config": "1.72.3",
+    "@tamagui/shorthands": "1.72.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
