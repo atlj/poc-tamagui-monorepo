@@ -12,7 +12,9 @@
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "*"
+    "ui": "*",
+    "@tamagui/next-theme": "1.72.3",
+    "tamagui": "^1.72.3"
   },
   "devDependencies": {
     "@types/node": "^18.11.5",
@@ -20,6 +22,7 @@
     "@types/react-dom": "^18.2.4",
     "eslint": "^8.19.0",
     "tsconfig": "*",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "@tamagui/next-plugin": "1.72.3"
   }
 }

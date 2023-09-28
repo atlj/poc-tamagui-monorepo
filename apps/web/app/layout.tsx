@@ -1,3 +1,6 @@
+'use client'
+import { TamaguiProvider } from "./TamaguiProvider";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+    <TamaguiProvider>
       <body>{children}</body>
+    </TamaguiProvider>
     </html>
   );
 }
