@@ -3,18 +3,17 @@
 import '@tamagui/core/reset.css'
 import '@tamagui/polyfill-dev'
 
-import { config as configBase } from '@tamagui/config'
-import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import { useServerInsertedHTML } from 'next/navigation'
 import React from 'react'
+
+global.React = React
 import { StyleSheet } from 'react-native'
-import { createTamagui, TamaguiProvider as TamaguiProviderOG } from 'tamagui'
+import {Provider} from "ui"
 
 import Tamagui from '../tamagui.config'
 import appConfig from '../tamagui.config'
 
 export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useRootTheme()
 
   useServerInsertedHTML(() => {
     // @ts-ignore
@@ -36,14 +35,8 @@ export const TamaguiProvider = ({ children }: { children: React.ReactNode }) => 
   })
 
   return (
-    <NextThemeProvider
-      onChangeTheme={(next) => {
-        setTheme(next as any)
-      }}
-    >
-      <TamaguiProviderOG config={appConfig} themeClassNameOnRoot defaultTheme={theme}>
+      <Provider config={appConfig}>
         {children}
-      </TamaguiProviderOG>
-    </NextThemeProvider>
+      </Provider>
   )
 }

@@ -1,10 +1,10 @@
 import config from "./tamagui.config"
-import { TamaguiProvider } from "tamagui";
 import { Home } from "./src/Home";
 import { useFonts } from "expo-font";
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from "react";
 import { View, StyleSheet } from "react-native";
+import {Provider} from 'ui'
 
 SplashScreen.preventAutoHideAsync();
 
@@ -22,9 +22,9 @@ const onLayoutRootView = useCallback(async () => {
 
   return (
   <View onLayout={onLayoutRootView} style={styles.container}>
-  <TamaguiProvider  config={config}>
+  <Provider  config={config}>
   <Home />
-    </TamaguiProvider>
+    </Provider>
     </View>
   );
 }

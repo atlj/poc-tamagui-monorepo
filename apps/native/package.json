@@ -17,7 +17,6 @@
     "react-dom": "^18.2.0",
     "react-native": "0.71.8",
     "react-native-web": "^0.18.9",
-    "tamagui": "^1.72.3",
     "ui": "*"
   },
   "devDependencies": {

@@ -2904,13 +2904,6 @@
     thread-loader "^4.0.1"
     url-loader "^4.1.1"
 
-"@tamagui/next-theme@1.72.3":
-  version "1.72.3"
-  resolved "https://registry.yarnpkg.com/@tamagui/next-theme/-/next-theme-1.72.3.tgz#e5ae18715e76b21c1d33f882f3cae87d5d28a3ad"
-  integrity sha512-05cPdB1akpNysSvbhTk2qFISnejwJpiCVyl3bCA/yNzP60EyiZugVeOFhOO7XViYz2bxSFjzC91jrve1NQHrCQ==
-  dependencies:
-    "@tamagui/use-event" "1.72.3"
-
 "@tamagui/normalize-css-color@1.72.3":
   version "1.72.3"
   resolved "https://registry.yarnpkg.com/@tamagui/normalize-css-color/-/normalize-css-color-1.72.3.tgz#b3ecc463df2ee0bdd936a044b93062a32672eae9"
